@@ -28,8 +28,10 @@ Anthropic API 호출 시 `system` + `user` 로 구성한다. 모델: `claude-opu
 수신 {prevReceived} → {email.totalReceived}
 발신 {prevSent} → {email.totalSent}
 
-[모니터링 대상 경쟁사]
-{config.competitors}
+[모니터링 대상 — 카테고리별 경쟁사 (config.competitorCategories)]
+{각 카테고리(category)와 competitors, keywords 목록. 예: VDI / Cloud PC · DaaS / RBI / Zero Trust / AI Workspace}
+- 경쟁사 신호는 반드시 소속 카테고리(category)를 함께 표기한다.
+- 신호가 없는 카테고리·경쟁사는 지어내지 말고 생략하거나 "직접 신호 없음"으로 둔다.
 
 [시장/경쟁사 최신 신호 — 선택]
 {웹검색·뉴스 요약이 있으면 여기에}

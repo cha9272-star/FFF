@@ -1,20 +1,54 @@
 {
   "myAddresses": ["cha@tilon.com", "cd@tilon.com", "cha9272@gmail.com"],
   "company": "틸론(Tilon)",
-  "competitors": [
-    { "name": "VMware (Broadcom)", "category": "VDI/DaaS", "aliases": ["VMware", "Horizon", "브로드컴", "Broadcom"] },
-    { "name": "Citrix", "category": "VDI/DaaS", "aliases": ["Citrix", "시트릭스", "Xen"] },
-    { "name": "소만사 (Somansa)", "category": "VDI · 웹격리(RBI)", "aliases": ["소만사", "Somansa"] },
-    { "name": "SK브로드밴드 (SKB)", "category": "VDI/DaaS · 클라우드PC", "aliases": ["SKB", "SK브로드밴드", "클라우드PC"] },
-    { "name": "3S소프트", "category": "VDI", "aliases": ["3S소프트", "3S Soft", "3S"] },
-    { "name": "유플렉스소프트", "category": "VDI", "aliases": ["유플렉스소프트", "유플렉스", "Uplexsoft", "Uplex"] }
+
+  "competitorCategories": [
+    {
+      "category": "VDI",
+      "description": "가상 데스크톱 인프라 (Virtual Desktop Infrastructure)",
+      "competitors": [
+        { "name": "VMware Horizon", "aliases": ["VMware", "Horizon", "브로드컴", "Broadcom"] },
+        { "name": "Citrix", "aliases": ["Citrix", "시트릭스", "Xen", "XenDesktop"] },
+        { "name": "Microsoft AVD", "aliases": ["AVD", "Azure Virtual Desktop", "애저 버추얼 데스크톱"] },
+        { "name": "Nutanix", "aliases": ["Nutanix", "누타닉스", "Frame"] },
+        { "name": "3S소프트", "aliases": ["3S소프트", "3S Soft", "3S"] },
+        { "name": "유플렉스소프트", "aliases": ["유플렉스소프트", "유플렉스", "Uplexsoft", "Uplex"] },
+        { "name": "틸론", "self": true, "aliases": ["틸론", "Tilon", "Dexstar", "덱스타"] }
+      ],
+      "keywords": ["VDI", "가상데스크톱", "가상화", "데스크톱 가상화", "씬클라이언트", "Thin Client"]
+    },
+    {
+      "category": "Cloud PC / DaaS",
+      "description": "클라우드 기반 데스크톱 서비스 (Desktop as a Service)",
+      "competitors": [
+        { "name": "SK브로드밴드 (SKB)", "aliases": ["SKB", "SK브로드밴드", "클라우드PC", "Cloud PC"] }
+      ],
+      "keywords": ["Cloud PC", "클라우드PC", "DaaS", "Windows 365", "구독형 데스크톱"]
+    },
+    {
+      "category": "RBI (Remote Browser Isolation)",
+      "description": "웹 브라우저 격리 기반 보안",
+      "competitors": [
+        { "name": "소만사 (Somansa)", "aliases": ["소만사", "Somansa"] }
+      ],
+      "keywords": ["RBI", "웹격리", "Remote Browser Isolation", "브라우저 격리", "인터넷 격리"]
+    },
+    {
+      "category": "Zero Trust",
+      "description": "제로트러스트 · 망분리 보안 아키텍처",
+      "competitors": [],
+      "keywords": ["제로트러스트", "Zero Trust", "ZTNA", "SASE", "N2SF", "망분리", "제로트러스트 보안모델"]
+    },
+    {
+      "category": "AI Workspace",
+      "description": "AI 기반 업무 환경 · 에이전트",
+      "competitors": [],
+      "keywords": ["AI Workspace", "AI 워크스페이스", "Copilot", "AI 에이전트", "AI Agent", "피지컬AI", "Physical AI"]
+    }
   ],
-  "marketKeywords": [
-    "VDI", "DaaS", "클라우드PC",
-    "웹격리", "RBI", "Remote Browser Isolation", "브라우저 격리",
-    "제로트러스트", "N2SF", "망분리", "CSAP",
-    "피지컬AI", "AI 데이터센터", "GPU", "재택근무", "원격 보안"
-  ],
+
+  "generalKeywords": ["CSAP", "AI 데이터센터", "GPU", "재택근무", "원격 보안", "공공 클라우드"],
+
   "categoryRules": [
     { "name": "공공/영업", "keywords": ["우정사업본부", "행안부", "제안", "입찰", "PoC", "고객", "sales", "견적", "계약", "구매"] },
     { "name": "부동산/자산", "keywords": ["마곡", "매각", "사옥", "세빌스", "Savills", "DC", "데이터센터"] },

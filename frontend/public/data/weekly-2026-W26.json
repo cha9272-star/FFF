@@ -66,38 +66,44 @@
   "market": {
     "competitors": [
       {
-        "name": "VMware (Broadcom)",
+        "name": "VMware Horizon",
+        "category": "VDI",
         "summary": "충남대병원이 VMware 700user 운영 중 성능 이슈로 스토리지 방식 전환을 검토, 틸론 VDI PoC를 직접 요청. 성능 우위 입증 시 대체 기회.",
         "signals": ["충남대병원 성능 이슈로 PoC 요청", "\"VMware보다 성능이 좋다\"는 현장 인식", "HCI 스토리지 전환 검토"],
         "sentiment": "positive"
       },
       {
         "name": "Citrix",
+        "category": "VDI",
         "summary": "포스코가 Citrix 1년 계약으로 VDI 운영 중이며 계약 종료 이후 계획을 검토. 종료 시점 확인 시 전환 제안 기회.",
         "signals": ["포스코 Citrix 1년 계약 운영", "계약 종료 후 대체 검토", "종료 시점 추가 확인 예정"],
         "sentiment": "neutral"
       },
       {
         "name": "소만사 (Somansa)",
-        "summary": "VDI·웹격리(RBI) 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "category": "RBI",
+        "summary": "RBI(웹격리) 모니터링 대상으로 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
         "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
         "sentiment": "neutral"
       },
       {
         "name": "SK브로드밴드 (SKB)",
-        "summary": "클라우드PC(DaaS) 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "category": "Cloud PC / DaaS",
+        "summary": "Cloud PC/DaaS 서비스 사업자 모니터링 대상으로 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
         "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
         "sentiment": "neutral"
       },
       {
         "name": "3S소프트",
-        "summary": "VDI 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "category": "VDI",
+        "summary": "VDI 모니터링 대상으로 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
         "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
         "sentiment": "neutral"
       },
       {
         "name": "유플렉스소프트",
-        "summary": "VDI 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "category": "VDI",
+        "summary": "VDI 모니터링 대상으로 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
         "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
         "sentiment": "neutral"
       }

@@ -122,7 +122,10 @@ export function MarketSection({ market }) {
             return (
               <div className="comp" key={i}>
                 <div className="comp-head">
-                  <strong>{c.name}</strong>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                    <strong>{c.name}</strong>
+                    {c.category && <span className="chip" style={{ padding: '2px 8px', fontWeight: 600 }}>{c.category}</span>}
+                  </span>
                   <span className="badge" style={{ background: `${s.color}1f`, color: s.color }}>{s.icon} {s.label}</span>
                 </div>
                 <p>{c.summary}</p>
