@@ -1,12 +1,25 @@
 {
-  "myAddresses": ["me@company.com", "cha9272@gmail.com"],
-  "competitors": ["경쟁사 A", "경쟁사 B", "신규 진입사 C"],
-  "marketKeywords": ["AI 자동화", "usage-based pricing", "SMB", "미드마켓"],
-  "categoryRules": [
-    { "name": "고객/영업", "keywords": ["customer", "sales", "견적", "계약", "구매", "proposal"] },
-    { "name": "내부 협업", "keywords": ["team", "internal", "회의", "meeting", "sync", "standup"] },
-    { "name": "파트너/협력사", "keywords": ["partner", "vendor", "협력", "제휴"] },
-    { "name": "뉴스레터/구독", "keywords": ["newsletter", "noreply", "no-reply", "digest", "구독"] }
+  "myAddresses": ["cha@tilon.com", "cd@tilon.com", "cha9272@gmail.com"],
+  "company": "틸론(Tilon)",
+  "competitors": [
+    { "name": "VMware (Broadcom)", "category": "VDI/DaaS", "aliases": ["VMware", "Horizon", "브로드컴", "Broadcom"] },
+    { "name": "Citrix", "category": "VDI/DaaS", "aliases": ["Citrix", "시트릭스", "Xen"] },
+    { "name": "소만사 (Somansa)", "category": "VDI · 웹격리(RBI)", "aliases": ["소만사", "Somansa"] },
+    { "name": "SK브로드밴드 (SKB)", "category": "VDI/DaaS · 클라우드PC", "aliases": ["SKB", "SK브로드밴드", "클라우드PC"] },
+    { "name": "3S소프트", "category": "VDI", "aliases": ["3S소프트", "3S Soft", "3S"] },
+    { "name": "유플렉스소프트", "category": "VDI", "aliases": ["유플렉스소프트", "유플렉스", "Uplexsoft", "Uplex"] }
   ],
-  "goalCategories": ["전략", "영업", "고객관리", "생산성", "제품"]
+  "marketKeywords": [
+    "VDI", "DaaS", "클라우드PC",
+    "웹격리", "RBI", "Remote Browser Isolation", "브라우저 격리",
+    "제로트러스트", "N2SF", "망분리", "CSAP",
+    "피지컬AI", "AI 데이터센터", "GPU", "재택근무", "원격 보안"
+  ],
+  "categoryRules": [
+    { "name": "공공/영업", "keywords": ["우정사업본부", "행안부", "제안", "입찰", "PoC", "고객", "sales", "견적", "계약", "구매"] },
+    { "name": "부동산/자산", "keywords": ["마곡", "매각", "사옥", "세빌스", "Savills", "DC", "데이터센터"] },
+    { "name": "내부 경영/공지", "keywords": ["사업계획", "경영회의", "공지", "교육", "실사", "경비", "AllTilon"] },
+    { "name": "뉴스레터/구독", "keywords": ["newsletter", "noreply", "no-reply", "digest", "Daily News", "뉴스레터", "구독", "웨비나"] }
+  ],
+  "goalCategories": ["전략", "공공영업", "영업", "자산전략", "고객관리", "생산성", "제품"]
 }

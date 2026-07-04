@@ -76,6 +76,30 @@
         "summary": "포스코가 Citrix 1년 계약으로 VDI 운영 중이며 계약 종료 이후 계획을 검토. 종료 시점 확인 시 전환 제안 기회.",
         "signals": ["포스코 Citrix 1년 계약 운영", "계약 종료 후 대체 검토", "종료 시점 추가 확인 예정"],
         "sentiment": "neutral"
+      },
+      {
+        "name": "소만사 (Somansa)",
+        "summary": "VDI·웹격리(RBI) 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
+        "sentiment": "neutral"
+      },
+      {
+        "name": "SK브로드밴드 (SKB)",
+        "summary": "클라우드PC(DaaS) 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
+        "sentiment": "neutral"
+      },
+      {
+        "name": "3S소프트",
+        "summary": "VDI 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
+        "sentiment": "neutral"
+      },
+      {
+        "name": "유플렉스소프트",
+        "summary": "VDI 모니터링 대상으로 신규 등록. 이번 주 메일·뉴스 내 직접 신호는 없음.",
+        "signals": ["모니터링 등록 · 이번 주 직접 신호 없음"],
+        "sentiment": "neutral"
       }
     ],
     "trends": [
