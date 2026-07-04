@@ -1,0 +1,117 @@
+{
+  "id": "weekly-2026-W27",
+  "type": "weekly",
+  "period": { "label": "2026년 7월 1주차 (6/29–7/5)", "start": "2026-06-29", "end": "2026-07-05" },
+  "generatedAt": "2026-07-04T09:00:00+09:00",
+  "sources": ["gmail", "outlook", "google_calendar"],
+  "summary": "이번 주는 신제품 출시 준비로 고객 커뮤니케이션이 32% 증가했습니다. 응답 지연 건이 14건 남아 있어 후속 조치가 필요하며, 회의 시간이 집중 업무 시간을 초과해 일정 재조정을 권장합니다. 경쟁사 A의 가격 인하 움직임이 포착되어 대응 전략 수립이 시급합니다.",
+  "email": {
+    "totalReceived": 342,
+    "totalSent": 128,
+    "unreplied": 14,
+    "avgResponseHours": 5.2,
+    "prevReceived": 259,
+    "prevSent": 140,
+    "byDay": [
+      { "day": "월", "received": 68, "sent": 24 },
+      { "day": "화", "received": 74, "sent": 31 },
+      { "day": "수", "received": 61, "sent": 22 },
+      { "day": "목", "received": 79, "sent": 29 },
+      { "day": "금", "received": 52, "sent": 18 },
+      { "day": "토", "received": 5, "sent": 3 },
+      { "day": "일", "received": 3, "sent": 1 }
+    ],
+    "byCategory": [
+      { "name": "고객/영업", "value": 138 },
+      { "name": "내부 협업", "value": 92 },
+      { "name": "파트너/협력사", "value": 54 },
+      { "name": "뉴스레터/구독", "value": 41 },
+      { "name": "기타", "value": 17 }
+    ],
+    "topContacts": [
+      { "name": "김민수 (ACME)", "email": "minsu.kim@acme.com", "received": 21, "sent": 12 },
+      { "name": "이서연 (내부)", "email": "seoyeon.lee@company.com", "received": 18, "sent": 15 },
+      { "name": "박지훈 (파트너)", "email": "jihoon@partner.io", "received": 14, "sent": 6 },
+      { "name": "최유진 (고객)", "email": "yujin.choi@bigcorp.com", "received": 11, "sent": 9 },
+      { "name": "정하늘 (내부)", "email": "haneul.jung@company.com", "received": 9, "sent": 8 }
+    ],
+    "insights": [
+      "목요일에 수신량이 최고치(79건)를 기록 — 출시 관련 문의가 집중됨.",
+      "고객/영업 카테고리가 전체의 40%로 가장 큼. 지난주 대비 +32%.",
+      "미응답 14건 중 8건이 24시간 이상 경과 — 고객사 3곳 포함, 우선 처리 필요."
+    ]
+  },
+  "work": {
+    "meetingHours": 14.5,
+    "focusHours": 11.0,
+    "meetingCount": 19,
+    "timeAllocation": [
+      { "category": "회의", "hours": 14.5 },
+      { "category": "집중 업무", "hours": 11.0 },
+      { "category": "메일/커뮤니케이션", "hours": 6.5 },
+      { "category": "기획/문서", "hours": 5.0 },
+      { "category": "기타", "hours": 3.0 }
+    ],
+    "highlights": [
+      "신제품 출시 킥오프 회의 완료 및 마케팅 팀과 일정 확정.",
+      "ACME사 계약 갱신 논의 진행 (예상 규모 확대).",
+      "Q3 로드맵 초안 작성 완료."
+    ],
+    "insights": [
+      "회의 시간(14.5h)이 집중 업무(11h)를 초과 — 딥워크 시간 확보 권장.",
+      "회의 19건 중 5건은 30분 이내 종료 가능했던 상태 업데이트성 — 비동기 전환 검토."
+    ]
+  },
+  "market": {
+    "competitors": [
+      {
+        "name": "경쟁사 A",
+        "summary": "핵심 제품군 가격을 최대 15% 인하하며 중소기업 시장 공략을 강화하고 있음.",
+        "signals": ["엔터프라이즈 요금제 15% 인하", "신규 파트너 3곳 발표", "채용 공고 급증 (영업직)"],
+        "sentiment": "negative"
+      },
+      {
+        "name": "경쟁사 B",
+        "summary": "AI 기능 추가에 집중하나 출시 지연 조짐. 시장 반응은 관망세.",
+        "signals": ["AI 어시스턴트 베타 발표", "출시일 2분기→3분기 연기"],
+        "sentiment": "neutral"
+      }
+    ],
+    "trends": [
+      "중소기업(SMB) 시장에서 가격 경쟁이 심화되는 추세.",
+      "고객들이 AI 기반 자동화 기능을 구매 결정의 핵심 요소로 언급하는 빈도 증가.",
+      "구독형 가격 모델에서 사용량 기반(usage-based) 모델로의 전환 논의 확대."
+    ],
+    "opportunities": [
+      "경쟁사 B의 AI 출시 지연을 기회로 우리 자동화 기능을 선제적으로 마케팅.",
+      "가격에 민감한 SMB 대신 ROI를 중시하는 미드마켓 세그먼트에 집중."
+    ],
+    "threats": [
+      "경쟁사 A의 공격적 가격 인하로 SMB 신규 계약 이탈 가능성.",
+      "사용량 기반 모델 전환 지연 시 가격 협상력 약화."
+    ]
+  },
+  "goals": [
+    {
+      "title": "미응답 고객 메일 24시간 내 100% 처리",
+      "rationale": "미응답 14건 중 고객사 3곳 포함 — 이탈 리스크 직결.",
+      "metric": "다음 주 미응답 24h+ 건수 0건",
+      "priority": "high",
+      "category": "고객관리"
+    },
+    {
+      "title": "경쟁사 A 가격 대응 전략 초안 수립",
+      "rationale": "경쟁사 A의 15% 인하에 대한 방어/차별화 전략 필요.",
+      "metric": "가격·가치 포지셔닝 문서 1건 완성 및 리더십 리뷰",
+      "priority": "high",
+      "category": "전략"
+    },
+    {
+      "title": "주간 집중 업무 시간 14시간 이상 확보",
+      "rationale": "회의가 집중 시간을 초과 — 딥워크 블록 확보 필요.",
+      "metric": "캘린더에 딥워크 블록 주 14h 확보, 상태성 회의 20% 축소",
+      "priority": "medium",
+      "category": "생산성"
+    }
+  ]
+}

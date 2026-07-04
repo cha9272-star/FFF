@@ -1,0 +1,132 @@
+{
+  "id": "monthly-2026-06",
+  "type": "monthly",
+  "period": { "label": "2026년 6월", "start": "2026-06-01", "end": "2026-06-30" },
+  "generatedAt": "2026-07-01T09:00:00+09:00",
+  "sources": ["gmail", "outlook", "google_calendar"],
+  "summary": "6월은 상반기 마감과 신제품 출시 준비가 겹치며 메일량이 연중 최고치를 기록했습니다. 응답 속도는 개선(평균 6.1→5.4시간)되었으나 회의 부하가 지속적으로 높았습니다. 시장에서는 AI 자동화 수요와 가격 경쟁이 동시에 심화되어, 하반기 차별화 포지셔닝이 핵심 과제로 부상했습니다.",
+  "email": {
+    "totalReceived": 1418,
+    "totalSent": 542,
+    "unreplied": 23,
+    "avgResponseHours": 5.4,
+    "prevReceived": 1187,
+    "prevSent": 498,
+    "byDay": [
+      { "day": "1주", "received": 331, "sent": 129 },
+      { "day": "2주", "received": 358, "sent": 141 },
+      { "day": "3주", "received": 387, "sent": 143 },
+      { "day": "4주", "received": 342, "sent": 129 }
+    ],
+    "byCategory": [
+      { "name": "고객/영업", "value": 561 },
+      { "name": "내부 협업", "value": 398 },
+      { "name": "파트너/협력사", "value": 224 },
+      { "name": "뉴스레터/구독", "value": 163 },
+      { "name": "기타", "value": 72 }
+    ],
+    "topContacts": [
+      { "name": "김민수 (ACME)", "email": "minsu.kim@acme.com", "received": 78, "sent": 44 },
+      { "name": "이서연 (내부)", "email": "seoyeon.lee@company.com", "received": 65, "sent": 58 },
+      { "name": "최유진 (고객)", "email": "yujin.choi@bigcorp.com", "received": 51, "sent": 39 },
+      { "name": "박지훈 (파트너)", "email": "jihoon@partner.io", "received": 44, "sent": 21 },
+      { "name": "정하늘 (내부)", "email": "haneul.jung@company.com", "received": 37, "sent": 33 }
+    ],
+    "insights": [
+      "월 수신량 1,418건으로 전월 대비 +19% — 상반기 최고치.",
+      "고객/영업 비중이 40%로 유지되며 신규 고객사 2곳 유입.",
+      "평균 응답 시간 6.1h→5.4h로 개선, 그러나 월말 미응답 23건 잔존."
+    ]
+  },
+  "work": {
+    "meetingHours": 58.0,
+    "focusHours": 46.0,
+    "meetingCount": 74,
+    "timeAllocation": [
+      { "category": "회의", "hours": 58.0 },
+      { "category": "집중 업무", "hours": 46.0 },
+      { "category": "메일/커뮤니케이션", "hours": 27.0 },
+      { "category": "기획/문서", "hours": 22.0 },
+      { "category": "교육/기타", "hours": 13.0 }
+    ],
+    "highlights": [
+      "상반기 실적 마감 및 하반기 예산 계획 수립 완료.",
+      "신제품 출시 준비 킥오프 — 마케팅·개발 정렬.",
+      "ACME사 계약 갱신 협상 진전, 규모 확대 논의.",
+      "팀 온보딩 2명 완료."
+    ],
+    "insights": [
+      "월 회의 74건, 58시간 — 주당 평균 14.5시간으로 높은 수준 유지.",
+      "집중 업무 대비 회의 비율 1.26:1 — 딥워크 확보가 반복적 과제.",
+      "월말로 갈수록 커뮤니케이션 부하 증가 패턴 반복."
+    ]
+  },
+  "market": {
+    "competitors": [
+      {
+        "name": "경쟁사 A",
+        "summary": "가격 경쟁력을 앞세워 SMB 시장 점유율 확대 중. 6월 중 요금 인하 단행.",
+        "signals": ["엔터프라이즈 15% 인하", "SMB 전용 요금제 신설", "영업 인력 확충"],
+        "sentiment": "negative"
+      },
+      {
+        "name": "경쟁사 B",
+        "summary": "AI 기능으로 차별화 시도하나 실행 속도가 느림. 기술 리더십 이미지 구축 중.",
+        "signals": ["AI 어시스턴트 베타", "출시 지연", "개발자 컨퍼런스 후원"],
+        "sentiment": "neutral"
+      },
+      {
+        "name": "신규 진입사 C",
+        "summary": "버티컬 특화 솔루션으로 니치 시장 공략. 초기 트랙션 확보.",
+        "signals": ["시리즈 A 투자 유치", "특정 산업군 레퍼런스 확보"],
+        "sentiment": "neutral"
+      }
+    ],
+    "trends": [
+      "AI 자동화가 구매 의사결정의 핵심 기준으로 자리잡는 추세 가속.",
+      "SMB 시장의 가격 경쟁 심화, 미드마켓 이상에서는 가치 기반 경쟁 유지.",
+      "사용량 기반 과금 모델에 대한 시장 수용도 상승.",
+      "버티컬 특화 솔루션의 부상 — 수평적 플랫폼 대비 니치 우위."
+    ],
+    "opportunities": [
+      "AI 자동화 기능을 하반기 핵심 메시지로 포지셔닝.",
+      "미드마켓 세그먼트 집중으로 가격 경쟁 회피 및 마진 방어.",
+      "사용량 기반 옵션 도입 검토로 신규 고객 진입 장벽 완화."
+    ],
+    "threats": [
+      "경쟁사 A의 가격 인하로 SMB 갱신율 하락 위험.",
+      "경쟁사 B가 AI 출시에 성공할 경우 기술 차별화 상실.",
+      "버티컬 진입사들의 니치 잠식."
+    ]
+  },
+  "goals": [
+    {
+      "title": "하반기 차별화 포지셔닝 전략 확정",
+      "rationale": "가격 경쟁(A)과 AI 경쟁(B) 동시 심화 — 명확한 포지셔닝 필요.",
+      "metric": "7월 중 포지셔닝·메시징 프레임워크 확정 및 전사 공유",
+      "priority": "high",
+      "category": "전략"
+    },
+    {
+      "title": "미드마켓 파이프라인 30% 확대",
+      "rationale": "가격 경쟁을 피하고 마진을 방어할 세그먼트.",
+      "metric": "Q3 미드마켓 신규 상담 건수 전분기 대비 +30%",
+      "priority": "high",
+      "category": "영업"
+    },
+    {
+      "title": "회의 시간 20% 감축, 집중 업무 확대",
+      "rationale": "회의:집중 비율 1.26:1 — 반복적 병목.",
+      "metric": "7월 회의 시간 58h→46h, 상태성 회의 비동기 전환",
+      "priority": "medium",
+      "category": "생산성"
+    },
+    {
+      "title": "메일 응답 SLA 4시간 정착",
+      "rationale": "응답 개선세를 표준으로 고착화.",
+      "metric": "고객 메일 평균 응답 5.4h→4h 이내, 24h+ 미응답 0 유지",
+      "priority": "medium",
+      "category": "고객관리"
+    }
+  ]
+}

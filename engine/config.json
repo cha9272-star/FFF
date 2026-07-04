@@ -1,0 +1,12 @@
+{
+  "myAddresses": ["me@company.com", "cha9272@gmail.com"],
+  "competitors": ["경쟁사 A", "경쟁사 B", "신규 진입사 C"],
+  "marketKeywords": ["AI 자동화", "usage-based pricing", "SMB", "미드마켓"],
+  "categoryRules": [
+    { "name": "고객/영업", "keywords": ["customer", "sales", "견적", "계약", "구매", "proposal"] },
+    { "name": "내부 협업", "keywords": ["team", "internal", "회의", "meeting", "sync", "standup"] },
+    { "name": "파트너/협력사", "keywords": ["partner", "vendor", "협력", "제휴"] },
+    { "name": "뉴스레터/구독", "keywords": ["newsletter", "noreply", "no-reply", "digest", "구독"] }
+  ],
+  "goalCategories": ["전략", "영업", "고객관리", "생산성", "제품"]
+}

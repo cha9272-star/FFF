@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Env / secrets
+.env
+*.local
+token_*.json
+credentials.json
+
+# Runtime-collected raw mail/calendar data (privacy — never commit)
+/engine/work/
+emails.json
+events.json
+stats.json
+!engine/sample_input/emails.json
+!engine/sample_input/events.json
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log

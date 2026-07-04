@@ -1,0 +1,10 @@
+[
+  { "from": "minsu.kim@acme.com", "from_name": "김민수 (ACME)", "to": ["me@company.com"], "direction": "in", "date": "2026-06-29T09:12:00+09:00", "subject": "계약 갱신 견적 문의", "category": "고객/영업", "responded_hours": 3.2 },
+  { "from": "me@company.com", "to": ["minsu.kim@acme.com"], "direction": "out", "date": "2026-06-29T12:24:00+09:00", "subject": "RE: 계약 갱신 견적", "category": "고객/영업" },
+  { "from": "seoyeon.lee@company.com", "from_name": "이서연 (내부)", "to": ["me@company.com"], "direction": "in", "date": "2026-06-30T10:00:00+09:00", "subject": "출시 킥오프 meeting 안건", "category": "내부 협업", "responded_hours": 1.1 },
+  { "from": "me@company.com", "to": ["seoyeon.lee@company.com"], "direction": "out", "date": "2026-06-30T11:05:00+09:00", "subject": "RE: 킥오프 안건", "category": "내부 협업" },
+  { "from": "jihoon@partner.io", "from_name": "박지훈 (파트너)", "to": ["me@company.com"], "direction": "in", "date": "2026-07-01T14:30:00+09:00", "subject": "제휴 제안서 검토 요청", "category": "파트너/협력사", "needs_reply": true },
+  { "from": "digest@newsletter.com", "to": ["me@company.com"], "direction": "in", "date": "2026-07-02T08:00:00+09:00", "subject": "Weekly industry digest", "category": "뉴스레터/구독" },
+  { "from": "yujin.choi@bigcorp.com", "from_name": "최유진 (고객)", "to": ["me@company.com"], "direction": "in", "date": "2026-07-02T16:20:00+09:00", "subject": "구매 관련 추가 질문", "category": "고객/영업", "needs_reply": true },
+  { "from": "me@company.com", "to": ["yujin.choi@bigcorp.com"], "direction": "out", "date": "2026-07-03T09:00:00+09:00", "subject": "RE: 추가 질문 답변", "category": "고객/영업" }
+]

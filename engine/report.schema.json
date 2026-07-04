@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InsightMail Report",
+  "description": "주간/월간 메일·업무·시장 분석 리포트 표준 스키마. 분석 엔진이 이 형식으로 생성하고, 대시보드가 그대로 렌더링한다.",
+  "type": "object",
+  "required": ["id", "type", "period", "generatedAt", "email", "work", "market", "goals"],
+  "properties": {
+    "id": { "type": "string", "description": "예: weekly-2026-W27, monthly-2026-06" },
+    "type": { "type": "string", "enum": ["weekly", "monthly"] },
+    "period": {
+      "type": "object",
+      "required": ["label", "start", "end"],
+      "properties": {
+        "label": { "type": "string" },
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" }
+      }
+    },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "description": "기간 전체 핵심 요약(2~4문장)" },
+    "email": {
+      "type": "object",
+      "properties": {
+        "totalReceived": { "type": "integer" },
+        "totalSent": { "type": "integer" },
+        "unreplied": { "type": "integer" },
+        "avgResponseHours": { "type": "number" },
+        "prevReceived": { "type": "integer" },
+        "prevSent": { "type": "integer" },
+        "byDay": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "day": { "type": "string" },
+              "received": { "type": "integer" },
+              "sent": { "type": "integer" }
+            }
+          }
+        },
+        "byCategory": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "name": { "type": "string" }, "value": { "type": "integer" } }
+          }
+        },
+        "topContacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "email": { "type": "string" },
+              "received": { "type": "integer" },
+              "sent": { "type": "integer" }
+            }
+          }
+        },
+        "insights": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "work": {
+      "type": "object",
+      "properties": {
+        "meetingHours": { "type": "number" },
+        "focusHours": { "type": "number" },
+        "meetingCount": { "type": "integer" },
+        "timeAllocation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "category": { "type": "string" }, "hours": { "type": "number" } }
+          }
+        },
+        "highlights": { "type": "array", "items": { "type": "string" } },
+        "insights": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "market": {
+      "type": "object",
+      "properties": {
+        "competitors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "summary": { "type": "string" },
+              "signals": { "type": "array", "items": { "type": "string" } },
+              "sentiment": { "type": "string", "enum": ["positive", "neutral", "negative"] }
+            }
+          }
+        },
+        "trends": { "type": "array", "items": { "type": "string" } },
+        "opportunities": { "type": "array", "items": { "type": "string" } },
+        "threats": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "priority"],
+        "properties": {
+          "title": { "type": "string" },
+          "rationale": { "type": "string" },
+          "metric": { "type": "string", "description": "측정 지표 (SMART)" },
+          "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+          "category": { "type": "string" }
+        }
+      }
+    }
+  }
+}
