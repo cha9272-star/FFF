@@ -64,9 +64,12 @@ Claude는 다음 필드를 **JSON으로만** 반환한다:
 - `frontend/public/data/<id>.json` 저장
 - `frontend/public/data/index.json`의 `reports` 배열에 항목 추가(최신이 위로)
 
-## 5. (선택) 배포 · 알림
+## 5. Notion 발행 (월간 루틴) · 배포
 - 대시보드가 정적이므로 `frontend`를 빌드해 배포하거나 로컬에서 확인
-- Notion/이메일로 요약 발송을 원하면 `Notion.notion-create-pages` 또는 Gmail 초안 생성
+- **월간 리포트는 Notion에도 발행**한다: `mcp__Notion__notion-create-pages`
+  - parent `page_id: 394eb85f-f97a-81f8-b7d5-d46917cff2da` (허브 "📊 InsightMail 리포트")
+  - 제목 `YYYY년 M월 리포트`, 본문에 요약·메일·업무·경쟁사/시장·목표 섹션(집계·요약만)
+- 이메일 요약 발송을 원하면 Gmail 초안 생성으로 확장 가능
 
 ---
 

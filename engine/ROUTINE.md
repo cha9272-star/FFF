@@ -12,7 +12,21 @@
 | 알림 | push on |
 | 대상 | 저장소 `cha9272-star/fff`, 브랜치 `claude/email-analysis-reporting-app-k5xych` |
 
-> 월간 루틴이 필요하면 cron을 `0 0 1 * *`(매월 1일)로, 프롬프트의 "주"를 "월"로 바꿔 등록.
+### 등록된 루틴
+
+| 루틴 | 트리거 ID | cron | 발행처 |
+|------|-----------|------|--------|
+| 주간 | `trig_01An9LmBr7kBrZZrKp53tN9S` | `0 0 * * 1` (월 09:00 KST) | 대시보드 |
+| 월간(+Notion) | `trig_01MUJaWYrd3NsBb3bcgheSgs` | `0 0 1 * *` (매월 1일 09:00 KST) | 대시보드 + Notion |
+
+### Notion 발행 (월간)
+
+월간 루틴은 대시보드 저장에 더해 Notion 허브 페이지 아래에 월 리포트 페이지를 발행한다.
+
+- 허브 페이지: **📊 InsightMail 리포트** — `page_id: 394eb85f-f97a-81f8-b7d5-d46917cff2da`
+  (https://app.notion.com/p/394eb85ff97a81f8b7d5d46917cff2da)
+- 도구: `mcp__Notion__notion-create-pages` (parent = 위 page_id)
+- 제목: `YYYY년 M월 리포트`, 본문에 요약·메일·업무·경쟁사/시장·목표 섹션 포함(집계·요약만, 원문 메일 제외).
 
 ## 실행 프롬프트 (standalone)
 
