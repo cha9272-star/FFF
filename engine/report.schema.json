@@ -87,6 +87,7 @@
             "type": "object",
             "properties": {
               "name": { "type": "string" },
+              "category": { "type": "string", "description": "competitorCategories의 카테고리 (VDI / Cloud PC · DaaS / RBI / Zero Trust / AI Workspace)" },
               "summary": { "type": "string" },
               "signals": { "type": "array", "items": { "type": "string" } },
               "sentiment": { "type": "string", "enum": ["positive", "neutral", "negative"] }
@@ -95,7 +96,21 @@
         },
         "trends": { "type": "array", "items": { "type": "string" } },
         "opportunities": { "type": "array", "items": { "type": "string" } },
-        "threats": { "type": "array", "items": { "type": "string" } }
+        "threats": { "type": "array", "items": { "type": "string" } },
+        "sources": {
+          "type": "array",
+          "description": "시장 스캔(WebSearch) 출처 목록. 실제 검색된 링크만 기록하고, 근거 없는 항목은 넣지 않는다.",
+          "items": {
+            "type": "object",
+            "required": ["title", "url"],
+            "properties": {
+              "title": { "type": "string" },
+              "url": { "type": "string" },
+              "publisher": { "type": "string" },
+              "date": { "type": "string", "description": "게시/확인 일자 (YYYY-MM-DD 또는 연도)" }
+            }
+          }
+        }
       }
     },
     "goals": {

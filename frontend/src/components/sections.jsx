@@ -150,6 +150,22 @@ export function MarketSection({ market }) {
           <ul className="ot-list">{market.threats?.map((t, i) => <li key={i}>{t}</li>)}</ul>
         </div>
       </div>
+      {market.sources?.length > 0 && (
+        <div className="card" style={{ marginTop: 16 }}>
+          <h3>출처</h3>
+          <div className="sub">시장 스캔(WebSearch)으로 수집한 근거</div>
+          <ol className="sources">
+            {market.sources.map((s, i) => (
+              <li key={i}>
+                <a href={s.url} target="_blank" rel="noopener noreferrer">{s.title}</a>
+                {(s.publisher || s.date) && (
+                  <span className="src-meta"> — {[s.publisher, s.date].filter(Boolean).join(', ')}</span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
     </>
   )
 }

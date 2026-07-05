@@ -33,8 +33,11 @@ Anthropic API 호출 시 `system` + `user` 로 구성한다. 모델: `claude-opu
 - 경쟁사 신호는 반드시 소속 카테고리(category)를 함께 표기한다.
 - 신호가 없는 카테고리·경쟁사는 지어내지 말고 생략하거나 "직접 신호 없음"으로 둔다.
 
-[시장/경쟁사 최신 신호 — 선택]
-{웹검색·뉴스 요약이 있으면 여기에}
+[시장 스캔 결과 (WebSearch)]
+{경쟁사·공공입찰·시장뉴스 검색 결과. 각 항목은 제목·URL·매체·일자를 포함.}
+- 여기 있는 **출처 있는 항목만** 신호·트렌드의 근거로 사용한다. 검색에 없던 내용을 지어내지 않는다.
+- 사용한 출처는 반환 JSON의 `market.sources[]`에 실제 링크로 기록한다.
+- 특정 경쟁사에 대한 검색 신호가 없으면 그 competitor는 "직접 신호 없음"으로 둔다.
 
 위 데이터를 바탕으로 다음 JSON을 생성하라:
 ```
@@ -51,11 +54,14 @@ Anthropic API 호출 시 `system` + `user` 로 구성한다. 모델: `claude-opu
   },
   "market": {
     "competitors": [
-      { "name": "", "summary": "", "signals": ["신호1", "신호2"], "sentiment": "positive|neutral|negative" }
+      { "name": "", "category": "VDI|Cloud PC / DaaS|RBI|Zero Trust|AI Workspace", "summary": "", "signals": ["신호1", "신호2"], "sentiment": "positive|neutral|negative" }
     ],
     "trends": ["시장 트렌드 3~4개"],
     "opportunities": ["기회 2~3개"],
-    "threats": ["위협 2~3개"]
+    "threats": ["위협 2~3개"],
+    "sources": [
+      { "title": "", "url": "", "publisher": "", "date": "YYYY-MM-DD 또는 연도" }
+    ]
   },
   "goals": [
     { "title": "", "rationale": "", "metric": "측정지표", "priority": "high|medium|low", "category": "" }

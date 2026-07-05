@@ -1,23 +1,19 @@
 # ⏰ 자동 생성 루틴 (예약 작업 스펙)
 
-주간 리포트를 자동 생성하는 예약 작업(Routine)의 정의다. Claude Code 세션에서
+주간·월간 리포트를 자동 생성하는 예약 작업(Routine)의 정의다. Claude Code 세션에서
 `create_trigger`(Claude Code Remote)로 등록하며, 매 실행 시 **새 세션**에서 아래
-프롬프트를 독립 실행한다.
-
-| 항목 | 값 |
-|------|-----|
-| 이름 | InsightMail 주간 리포트 자동 생성 |
-| 주기(cron) | `0 0 * * 1` — 매주 월요일 09:00 KST (00:00 UTC) |
-| 실행 모드 | `create_new_session_on_fire: true` (매번 새 세션) |
-| 알림 | push on |
-| 대상 | 저장소 `cha9272-star/fff`, 브랜치 `claude/email-analysis-reporting-app-k5xych` |
+프롬프트를 독립 실행한다. 공통 설정: 실행 모드 `create_new_session_on_fire: true`,
+알림 push on, 대상 저장소 `cha9272-star/fff` · 브랜치 `claude/email-analysis-reporting-app-k5xych`.
 
 ### 등록된 루틴
 
-| 루틴 | 트리거 ID | cron | 발행처 |
-|------|-----------|------|--------|
-| 주간 | `trig_01An9LmBr7kBrZZrKp53tN9S` | `0 0 * * 1` (월 09:00 KST) | 대시보드 |
-| 월간(+Notion) | `trig_01MUJaWYrd3NsBb3bcgheSgs` | `0 0 1 * *` (매월 1일 09:00 KST) | 대시보드 + Notion |
+| 루틴 | 트리거 ID | cron | 커버 기간 | 발행처 |
+|------|-----------|------|-----------|--------|
+| 주간 | `trig_016xQHoKiUh7yrVP8KwUBXsj` | `0 7 * * 5` (금 16:00 KST) | 이번 주(월~금) | 대시보드 |
+| 월간(+Notion) | `trig_01DS5VCweNd84SxXCrCiHztm` | `0 7 28-31 * *` (말일 가드) | 이번 달(1일~말일) | 대시보드 + Notion |
+
+- **말일 처리**: 표준 cron이 `L`(말일)을 지원하지 않아 28~31일에 발화하고, 프롬프트 0단계 가드("말일 아니면 즉시 종료")로 말일에만 실제 실행.
+- **시장 스캔**: 두 루틴 모두 PLAYBOOK 2.5의 WebSearch 시장 스캔(경쟁사+공공입찰+시장뉴스)을 수행하고 `market.sources[]`(출처 링크)를 채운다.
 
 ### Notion 발행 (월간)
 

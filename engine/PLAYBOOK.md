@@ -47,17 +47,27 @@ python engine/aggregate.py \
 
 → `stats.json`에 `email`, `work` 통계 블록이 생성된다. **이 숫자는 그대로 사용**하고 LLM이 다시 계산하지 않는다.
 
+## 2.5 시장 스캔 (WebSearch)
+
+`config.json`의 `competitorCategories`·`generalKeywords`를 기준으로 **WebSearch**를 돌려 시장·경쟁사 근거를 수집한다.
+
+- 범위: **경쟁사 동향 + 공공입찰(나라장터·공공 VDI) + 시장 뉴스**. 한국어+영어로 검색하고 기간(해당 주/월)에 맞춰 최신 위주로.
+- 카테고리별로 대표 쿼리 구성(예: `VMware Horizon Omnissa 가격`, `Citrix DaaS alternative`, `Remote Browser Isolation 시장`, `제로트러스트 N2SF 공공`, `AI Workspace Copilot`).
+- 결과를 dedupe해 `market.sources[] = {title, url, publisher, date}`로 정리한다.
+- **출처 있는 항목만** 신호/트렌드의 근거로 쓰고, 검색에 없던 내용은 지어내지 않는다. 신호 없는 경쟁사는 "직접 신호 없음".
+
 ## 3. 서술 생성 (Claude)
 
 `engine/analysis_prompt.md`의 프롬프트에 다음을 넣어 Claude를 호출한다.
 - `stats.json` (집계 결과)
 - 직전 기간 통계 (증감 비교용 → `prevReceived`, `prevSent`)
 - 경쟁사 목록 / 모니터링 키워드 (`engine/config.json`)
-- (선택) 웹 검색·뉴스로 수집한 시장/경쟁사 최신 신호
+- **2.5의 시장 스캔 결과 (출처 포함)**
 
 Claude는 다음 필드를 **JSON으로만** 반환한다:
 `summary`, `email.insights`, `work.highlights`, `work.insights`,
-`market.{competitors,trends,opportunities,threats}`, `goals[]`.
+`market.{competitors,trends,opportunities,threats,sources}`, `goals[]`.
+경쟁사는 소속 `category`를 함께 표기한다.
 
 ## 4. 병합 & 저장
 - `stats.json`(숫자) + Claude 서술 → `report.schema.json` 형식으로 병합

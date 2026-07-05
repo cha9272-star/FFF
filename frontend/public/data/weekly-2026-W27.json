@@ -72,11 +72,11 @@
         "sentiment": "neutral"
       },
       {
-        "name": "VMware Horizon",
+        "name": "VMware Horizon (→Omnissa)",
         "category": "VDI",
-        "summary": "이번 주 메일·뉴스 내 직접 신호 없음(전주 충남대병원 PoC 기회 지속 모니터링).",
-        "signals": ["직접 신호 없음"],
-        "sentiment": "neutral"
+        "summary": "Broadcom 인수 후 영구 라이선스 폐지·구독 전환으로 200~500% 인상, EUC는 KKR(Omnissa)로 분사. 대체 수요 확대 — 충남대병원 PoC 기회와 연결.",
+        "signals": ["구독 전환 200~500% 가격 인상", "EUC 분사(Omnissa)", "대체 검토 12~24개월 계획 단계"],
+        "sentiment": "positive"
       },
       {
         "name": "소만사 (Somansa)",
@@ -108,7 +108,13 @@
     "threats": [
       "Dstation 커스터마이즈 검수 지연 반복(GSITM 사례) — 제품 신뢰도·수익성 저하.",
       "포스코 제품 이슈 미해결 시 Citrix 잔류로 기회 상실.",
-      "공공 발표평가(우정사업본부 7/8) 등 일정 리스크."
+      "공공 발표평가(우정사업본부 7/8) 등 일정 리스크.",
+      "AVD(Microsoft) 등 글로벌 DaaS의 높은 채택률(62%)로 클라우드 전환 경쟁 심화."
+    ],
+    "sources": [
+      { "title": "VMware Pricing After Broadcom: 가격 인상과 대체안", "url": "https://softwarepricingguide.com/vmware-pricing-after-broadcom-the-800-1500-price-shock-what-changed-and-your-real-alternatives-in-2025/", "publisher": "Software Pricing Guide", "date": "2026" },
+      { "title": "30 Key VDI Stats and Trends for 2026 (DaaS 63%·AVD 62%)", "url": "https://www.acecloudhosting.com/blog/vdi-stats/", "publisher": "Ace Cloud Hosting", "date": "2026" },
+      { "title": "Desktop Virtualization Market 2026–2034 (APAC 최고 성장·보안 브라우저)", "url": "https://www.fortunebusinessinsights.com/desktop-virtualization-market-107810", "publisher": "Fortune Business Insights", "date": "2026" }
     ]
   },
   "goals": [
